@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulário</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+    <h1 class="titulo">Cadastro de Emprego</h1>
+    <div>
+        <form>
+            <fieldset class="grupo">
+                
+                <div class="blocos">
+                    <label for="nome">
+                        Nome Completo:
+                        <input type="text" placeholder="Digite Seu nome" id="nome" name="nome" required>
+                    </label>
+                    
+                    <label for="genero">
+                        Genero:
+                        <select name="genero" id="genero">
+                            <option selected disabled value="">Selecione</option>
+                            <option value="Masculino">Masculino</option>
+                            <option value="Feminino">Feminino</option>
+                            <option value="Outro">Outro</option>
+                        </select>
+                    </label>
+                    <br>
+                    <label for="email" placeholder="Digite seu Email" id="">
+                        Email:
+                        <input type="email" placeholder="Digite seu Email" id="email" name="email" required>
+                    </label>
+                    <label for="telefone">
+                        Telefone:
+                        <input type="text" name="telefone" id="telefone">
+                    </label>
+                </div>
+            </fieldset>
+            <br>
+            <fieldset class="grupo">
+                <div class="blocos">
+                    <label for="estado">
+                        Estado:
+                        <input type="text" placeholder="Digite seu Estado" id="estado" name="estado" required>
+                    </label>
+                    
+                    <label for="cidade">
+                        Cidade:
+                        <input type="text" placeholder="Digite sua Cidade" id="cidade" name="cidade" required>
+                    </label>
+                    
+                    <label for="endereco">
+                        Endereço:
+                        <input type="text" placeholder="Digite seu Endereco" id="endereco" name="endereco" required >
+                    </label>
+                </div>
+            </fieldset>
+            
+            <br>
+
+            <fieldset class="grupo">
+                <div class="check">
+                    <label for="formacao">
+                        Escolaridade:
+                        <br>
+                        <input type="checkbox" value="Ensino-Fundamental-Completo" name="Ensino-Fundamental-Completo">
+                        Ensino Fundamental Completo
+                        <br>
+                        <input type="checkbox" value="Ensino-Medio-Incompleto" name="Ensino-Medio-Incompleto">
+                        Ensino Medio Incompleto
+                        <br>
+                        <input type="checkbox" value="Ensino-Medio-Completo" name="Ensino-Medio-Completo">
+                        Ensino Medio Completo
+                        <br>
+                        <input type="checkbox" value="Ensino-Superior-Incompleto" name="Ensino-Superior-Incompleto">
+                        Ensino Superior Incompleto
+                        <br>
+                        <input type="checkbox" value="Ensino-Superior-Completo" name="Ensino-Superior-Completo">
+                        Ensino Superior Completo
+                        <br>
+                    </label>
+                
+                    <br>
+                
+                    <label for="senhioridade">
+                        Senhioridade:
+                        <select name="senhioridade" id="senhioridade">
+                            <option selected disabled value="">Selecione</option>
+                            <option value="Junior">Junior</option>
+                            <option value="Pleno">Pleno</option>
+                            <option value="Senior">Senior</option>
+                        </select>
+                    </label>
+                </div>
+                <br>
+                
+                <div class="check">
+                    <label>Conhecimentos:</label><br><br>
+                    <input type="checkbox" name="HTML" id="tecnologia" value="HTML">
+                    <label for="tecnologia">HTML</label>
+                    <input type="checkbox" name="CSS" id="tecnologia1" value="CSS">
+                    <label for="tecnologia1">CSS</label>
+                    <input type="checkbox" name="JavaScript" id="tecnologia2" value="JavaScript">
+                    <label for="tecnologia2">JavaScript</label>
+                    <input type="checkbox" name="React" id="tecnologia3" value="React">
+                    <label for="tecnologia3">React</label>
+                    <input type="checkbox" name="C++" id="tecnologia4" value="C++">
+                    <label for="tecnologia4">C++</label>
+                    <input type="checkbox" name="DataBase" id="tecnologia5" value="SQL">
+                    <label for="tecnologia5">SQL</label>
+                </div>
+            </fieldset>
+            <br>
+
+            <br>
+            <div>
+                <button class="butao" type="submit">Enviar</button>
+            </div>
+        </form>
+    </div>
+</body>
+</html>

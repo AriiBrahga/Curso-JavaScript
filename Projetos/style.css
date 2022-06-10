@@ -1,0 +1,70 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+.titulo{
+    font-family:Arial, Helvetica, sans-serif;
+    color: rgb(68, 112, 68);
+    margin-left: 7%;
+}
+
+fieldset{
+    border: 0;
+}
+
+body{
+    background-color: rgba(156, 191, 194, 0.781);
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 1em;
+    color: rgb(8, 62, 124);
+    margin-top: 2%;
+    margin-left: 36%;
+    justify-content: center;
+}
+
+input, select, button{
+    border-radius: 5px;
+}
+
+.blocos{
+    margin-bottom: 1em;
+}
+
+.blocos label{
+    margin-bottom: auto;
+    color: rgb(8, 62, 124);
+    display: block;
+}
+
+fieldset.grupo .blocos{
+    float: left;
+    margin-right: 1em;
+}
+
+.blocos input[type="text"], .blocos input[type="email"], .blocos input[type="checkbox"]{
+    padding: 0.2em;
+    border: 1px solid rgb(68, 130, 138);
+    display: block;
+}
+
+.blocos select, option{
+    padding-right: 1em;
+}
+
+.butao{
+    font-size: 1.2em;
+    background: rgb(74, 123, 196);
+    border: 0;
+    margin-bottom: 1em;
+    color: white;
+    padding: 0.2em 0.6em;
+    top: 10%;
+    left: 80%;
+    margin-right: -40%;
+    transform: translate(-10%, -10%);
+}
+
+#check{
+    display: inline-block;
+}
