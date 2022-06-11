@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      function olamundo() {
+        console.log("Olá Mundo");
+        console.log("Hoje o dia está lindo");
+      }
+
+      let val1 = 10;
+      let val2 = 30;
+      let val3 = "3";
+
+      function somar(valor1, valor2) {
+        let resultado = valor1 + valor2;
+        console.log(resultado);
+      }
+
+      let soma = function (valor1, valor2) {
+        let resultado = valor1 + valor2;
+        console.log(resultado);
+      };
+
+      olamundo();
+      somar(9, val1);
+      soma(val1, val2);
+      soma(val2, val3);
+      soma("100", val3);
+
+      let objetoServidor = {
+        acesso: true,
+        login: "mundojs",
+      };
+
+      let objetoServidor2 = {
+        erro: "Erro ao conectar ao servidor",
+      };
+      // Caso o objeto não contenha erro,
+      // Confira se o acesso é permitido
+      // se for permitido exiba "login: mundojs"
+      // senão escreva "acesso negado"
+      // Caso de erro exiba a mensagem de erro
+      function conexaoLogin(respostaDoServidor) {
+        if (respostaDoServidor.erro == null) {
+          if (respostaDoServidor.acesso) {
+            console.log(`login: ${respostaDoServidor.login}`);
+          } else {
+            console.log("Acesso negado");
+          }
+        } else {
+          console.log(respostaDoServidor.erro);
+        }
+      }
+    </script>
+  </body>
+</html>
